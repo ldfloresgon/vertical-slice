@@ -1,0 +1,14 @@
+<Project>
+  <PropertyGroup>
+    <Product>Vertical Slie $(MSBuildProjectName)</Product>
+    <NeutralLanguage>en</NeutralLanguage>
+    <Nullable>disable</Nullable>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <_NameSuffix>.$(MSBuildProjectName)</_NameSuffix>
+    <AssemblyName>Vertical.Slice$(_NameSuffix.Replace('.Api', ''))</AssemblyName>
+    <RootNamespace>Vertical.Slice$(_NameSuffix.Replace('.Api', '').Replace('.Abstractions', ''))</RootNamespace>
+  </PropertyGroup>
+</Project>
